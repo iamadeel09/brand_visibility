@@ -1,0 +1,4 @@
+# Backend dependencies (demo mode needs none; Gemini uses stdlib HTTP)
+openai>=1.0
+# optional, only for the Claude provider:
+# anthropic>=0.30
