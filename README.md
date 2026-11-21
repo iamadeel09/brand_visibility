@@ -97,3 +97,5 @@ The [backend test suite](tests/test_backend.py) covers scoring, mention detectio
 - **Recommendations require human judgment.** They suggest what to investigate or update. Teams verify the evidence and decide what to publish.
 
 The frontend and backend were developed for the same hackathon project. The backend and tests originated in the [shared EU Brand Visibility repository](https://github.com/danish2k04/EU_brand_visibilty).
+
+On Windows, create the virtual environment with `py -3.12 -m venv .venv`.
