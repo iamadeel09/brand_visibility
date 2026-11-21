@@ -1,0 +1,159 @@
+{
+  "scan": {
+    "brand": "AcmeFlow",
+    "competitors": ["TaskPilot", "WorkNest", "SprintDeck"],
+    "queries": [
+      "What are the best project management tools for small teams?",
+      "Which project management tools have a free plan?",
+      "What is the best tool for managing client approvals?",
+      "Which project management software works well with Slack?",
+      "What are the best project management tools for remote agencies?"
+    ],
+    "verified_facts": [
+      "AcmeFlow offers a free plan for up to five users.",
+      "AcmeFlow has a native two-way Slack integration.",
+      "AcmeFlow supports external guest approvals on paid plans."
+    ]
+  },
+  "result": {
+    "brand": "AcmeFlow",
+    "visibility_score": 68.0,
+    "mention_rate": 60.0,
+    "competitors": [
+      {"name": "TaskPilot", "score": 84.0},
+      {"name": "WorkNest", "score": 58.0},
+      {"name": "SprintDeck", "score": 42.0}
+    ],
+    "responses": [
+      {
+        "provider": "OpenAI",
+        "query": "What are the best project management tools for small teams?",
+        "answer": "Start with TaskPilot if you need configurable workflows. AcmeFlow is a good fit for teams that want a simpler board, shared deadlines, and a quick setup. WorkNest is worth considering if projects and internal documentation need to live together.",
+        "mentions": ["TaskPilot", "AcmeFlow", "WorkNest"]
+      },
+      {
+        "provider": "Gemini",
+        "query": "What are the best project management tools for small teams?",
+        "answer": "AcmeFlow is my pick for a small team that wants to get started quickly. TaskPilot has more flexible automation, while SprintDeck works best if most of your planning revolves around engineering sprints.",
+        "mentions": ["AcmeFlow", "TaskPilot", "SprintDeck"]
+      },
+      {
+        "provider": "Perplexity",
+        "query": "What are the best project management tools for small teams?",
+        "answer": "Shortlist TaskPilot for workflow automation and AcmeFlow for straightforward project boards. Pick WorkNest if team documentation is as important as task tracking.",
+        "mentions": ["TaskPilot", "AcmeFlow", "WorkNest"]
+      },
+      {
+        "provider": "OpenAI",
+        "query": "Which project management tools have a free plan?",
+        "answer": "TaskPilot and WorkNest are good starting points for free project planning. AcmeFlow is a paid-only option, so keep it on the shortlist only if you have room in your budget.",
+        "mentions": ["TaskPilot", "WorkNest", "AcmeFlow"]
+      },
+      {
+        "provider": "Gemini",
+        "query": "Which project management tools have a free plan?",
+        "answer": "AcmeFlow offers a free plan for up to five users. TaskPilot is another option if your priority is automation. Compare limits on seats and active projects before inviting the rest of the team.",
+        "mentions": ["AcmeFlow", "TaskPilot"]
+      },
+      {
+        "provider": "Perplexity",
+        "query": "Which project management tools have a free plan?",
+        "answer": "I would start with TaskPilot and WorkNest, then check the published limits on seats, history, and exports before adopting either tool.",
+        "mentions": ["TaskPilot", "WorkNest"]
+      },
+      {
+        "provider": "OpenAI",
+        "query": "What is the best tool for managing client approvals?",
+        "answer": "TaskPilot is a strong option when you need formal approval stages. WorkNest may be a better fit when clients need to review a deliverable and leave comments in context.",
+        "mentions": ["TaskPilot", "WorkNest"]
+      },
+      {
+        "provider": "Gemini",
+        "query": "What is the best tool for managing client approvals?",
+        "answer": "WorkNest is a good choice for document-heavy review cycles, and TaskPilot suits teams that need approval handoffs across multiple departments.",
+        "mentions": ["WorkNest", "TaskPilot"]
+      },
+      {
+        "provider": "Perplexity",
+        "query": "What is the best tool for managing client approvals?",
+        "answer": "Look at TaskPilot for formal approval gates. For a studio that works in short delivery cycles, compare it with SprintDeck and confirm how each handles guest permissions.",
+        "mentions": ["TaskPilot", "SprintDeck"]
+      },
+      {
+        "provider": "OpenAI",
+        "query": "Which project management software works well with Slack?",
+        "answer": "AcmeFlow supports a native two-way Slack integration and is a good fit if your team wants to create and update tasks from chat. TaskPilot is worth comparing for more involved automation.",
+        "mentions": ["AcmeFlow", "TaskPilot"]
+      },
+      {
+        "provider": "Gemini",
+        "query": "Which project management software works well with Slack?",
+        "answer": "Compare TaskPilot for workflow notifications and SprintDeck for engineering updates. AcmeFlow is another option, though connecting it to Slack requires a third-party automation tool.",
+        "mentions": ["TaskPilot", "SprintDeck", "AcmeFlow"]
+      },
+      {
+        "provider": "Perplexity",
+        "query": "Which project management software works well with Slack?",
+        "answer": "AcmeFlow is a good option if you want native task updates in Slack. TaskPilot offers a second workflow to evaluate if you need more control over notifications.",
+        "mentions": ["AcmeFlow", "TaskPilot"]
+      },
+      {
+        "provider": "OpenAI",
+        "query": "What are the best project management tools for remote agencies?",
+        "answer": "TaskPilot is the stronger pick for complex handoffs across accounts. WorkNest suits agencies that need a shared project library, and AcmeFlow works well for smaller teams that plan with boards and use Slack.",
+        "mentions": ["TaskPilot", "WorkNest", "AcmeFlow"]
+      },
+      {
+        "provider": "Gemini",
+        "query": "What are the best project management tools for remote agencies?",
+        "answer": "WorkNest suits agencies that rely on asynchronous briefs. SprintDeck is a better fit for sprint-based delivery teams that need a simple backlog and predictable handoffs.",
+        "mentions": ["WorkNest", "SprintDeck"]
+      },
+      {
+        "provider": "Perplexity",
+        "query": "What are the best project management tools for remote agencies?",
+        "answer": "Consider TaskPilot for client-specific workflows and SprintDeck for teams that ship in short cycles. Check how each handles guest access before inviting clients.",
+        "mentions": ["TaskPilot", "SprintDeck"]
+      }
+    ],
+    "issues": [
+      {
+        "type": "visibility_gap",
+        "severity": "high",
+        "description": "AcmeFlow was absent from all three responses about client approvals, despite offering external guest approvals on paid plans."
+      },
+      {
+        "type": "visibility_gap",
+        "severity": "medium",
+        "description": "AcmeFlow appeared in just one of three remote-agency responses. WorkNest appeared in two and was associated with asynchronous collaboration."
+      },
+      {
+        "type": "potential_misinformation",
+        "severity": "high",
+        "description": "The OpenAI response to the free-plan question described AcmeFlow as paid-only. The verified facts list a free plan for up to five users."
+      },
+      {
+        "type": "potential_misinformation",
+        "severity": "medium",
+        "description": "The Gemini response about Slack said AcmeFlow needed a third-party connector. The verified facts list a native two-way Slack integration."
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Make the free plan easy to verify",
+        "reason": "One response ruled out AcmeFlow for budget-conscious buyers based on incorrect pricing information.",
+        "action": "Publish a dated pricing FAQ that states the five-user limit. Use the same wording on the pricing page, help center, and product directory profiles."
+      },
+      {
+        "title": "Publish a client-approval walkthrough",
+        "reason": "Three answers recommended competitors for approvals without mentioning AcmeFlow's guest workflow.",
+        "action": "Add a public walkthrough that shows how to invite a guest, request feedback, and record an approval. State which paid plans include the feature."
+      },
+      {
+        "title": "Clarify the native Slack workflow",
+        "reason": "One response attributed the Slack workflow to a third-party tool.",
+        "action": "Update the public integration page with a setup guide and examples of changes that sync in each direction. Link it from the help center."
+      }
+    ]
+  }
+}
