@@ -1,4 +1,4 @@
-"""Presentation and response-contract validation for GEO Pulse AI."""
+"""Presentation and response-contract validation for GEO Visibility."""
 
 from collections import Counter
 from html import escape
@@ -207,7 +207,7 @@ def render_header(page: str, mode: str, brand: str | None, source: str | None) -
     st.html(
         f'<div class="workspace-path">Workspace<span aria-hidden="true">/</span>{escape(page)}</div>'
         '<div class="signal-hero"><div class="signal-grid" aria-hidden="true"></div>'
-        '<div class="hero-label">Brand visibility &amp; truth intelligence</div>'
+        '<div class="hero-label">Brand Intelligence for AI Answers</div>'
         f'<h1>{escape(brand or "Brand visibility")}</h1>'
         '<p>See where AI recommends your brand and which claims need a closer look.</p>'
         f'<div class="source-tag {tag_class}">{escape(label)}</div>'

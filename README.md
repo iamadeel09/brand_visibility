@@ -1,6 +1,6 @@
-# GEO Pulse AI
+# GEO Visibility
 
-GEO Pulse AI shows where AI providers mention a brand, how it compares with competitors, and which claims and visibility gaps need attention.
+GEO Visibility shows where AI providers mention a brand, how it compares with competitors, and which claims and visibility gaps need attention.
 
 ## Run locally
 

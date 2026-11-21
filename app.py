@@ -1,4 +1,4 @@
-"""Streamlit entry point for GEO Pulse AI."""
+"""Streamlit entry point for GEO Visibility."""
 
 import json
 import logging
@@ -12,6 +12,7 @@ from dashboard import STYLES, render_dashboard, render_header, validate_result
 
 ROOT = Path(__file__).resolve().parent
 LOGGER = logging.getLogger(__name__)
+APP_NAME = "GEO Visibility"
 
 
 @dataclass(frozen=True)
@@ -99,7 +100,7 @@ def sidebar(example: Snapshot) -> tuple[str, str, bool]:
     with st.sidebar:
         st.html(
             '<div class="product"><div class="product-mark" aria-hidden="true">◉</div>'
-            '<div><strong>GEO Pulse AI</strong><small>Brand intelligence</small></div></div>'
+            f'<div><strong>{APP_NAME}</strong><small>Brand Intelligence for AI Answers</small></div></div>'
         )
         st.html('<div class="sidebar-label">Workspace</div>')
         with st.container(key="navigation"):
@@ -196,7 +197,7 @@ def submit_scan(mode: str, example: Snapshot) -> None:
 
 def main() -> None:
     st.set_page_config(
-        page_title="GEO Pulse AI",
+        page_title=APP_NAME,
         page_icon="◉",
         layout="wide",
         initial_sidebar_state="auto",
