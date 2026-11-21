@@ -118,7 +118,7 @@ STYLES = """
 }
 .kpi:first-child { border-top: 3px solid #159d8a; padding-top: calc(.9rem - 2px); }
 .kpi-label { color: #40566b; font-size: .875rem; font-weight: 700; }
-.kpi-value { color: #13293c; font-size: 2.05rem; font-weight: 760; line-height: 1.25;
+.kpi-value { color: #13293c; font-size: 2.25rem; font-weight: 760; line-height: 1.25;
     letter-spacing: -.05em; font-variant-numeric: tabular-nums; margin: .2rem 0 .15rem; }
 .kpi-value span { color: #53667c; font-size: .95rem; letter-spacing: 0; margin-left: .2rem; }
 .kpi-detail { color: #53667c; font-size: .84rem; }
